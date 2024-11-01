@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="grid grid-cols-12 gap-0">
+      <aside
+        class="sticky top-0 left-0 h-[100vh] overflow-y-auto bg-white col-start-1 col-end-3"
+      >
+        <div class="bg-gray-500 mb-5 sticky top-0 h-16">
+          <h3 class="text-3xl text-white font-bold p-3">PT_Dapstore</h3>
+        </div>
+        <div class="flex items-center gap-3 px-5">
+          <img src="../assets/dap.jpg" alt="" class="w-10 h-10 rounded-full object-cover" />
+          <div>
+            <p class="text-xs">Welcome, Dava Albian</p>
+            <p class="font-semibold">Administrator</p>
+          </div>
+        </div>
+        <div class="px-5 py-2">
+          <a href="./index.html">
+            <li
+              class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+            >
+              <i
+                class="bx bxs-home text-xl text-gray-400 group-hover:text-white"
+              ></i
+              >Dashboard
+            </li>
+          </a>
+          <ul>
+            <h3 class="font-semibold text-lg mt-4 mb-2 text-gray-500">
+              Menu Karyawan
+            </h3>
+            <a href="./karyawan.html">
+              <li
+                class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+              >
+                <i
+                  class="bx bxs-user text-xl text-gray-400 group-hover:text-white"
+                ></i
+                >Karyawan
+              </li>
+            </a>
+            <a href="./jabatan.html">
+              <li
+                class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+              >
+                <i
+                  class="bx bxs-user-plus text-2xl text-gray-400 group-hover:text-white"
+                ></i
+                >Jabatan
+              </li>
+            </a>
+            <a href="./divisi.html">
+              <li
+                class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+              >
+                <i
+                  class="bx bxs-user-plus text-2xl text-gray-400 group-hover:text-white"
+                ></i
+                >Divisi
+              </li>
+            </a>
+          </ul>
+          <ul>
+            <h3 class="font-semibold text-lg mt-4 mb-2 text-gray-500">
+              Menu Absensi
+            </h3>
+            <a href="./absensi.html">
+              <li
+                class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+              >
+                <i
+                  class="bx bxs-calendar-check text-2xl text-gray-400 group-hover:text-white"
+                ></i
+                >Absensi
+              </li>
+            </a>
+            <a href="./izin.html">
+              <li
+                class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+              >
+                <i
+                  class="bx bxs-calendar-plus text-2xl text-gray-400 group-hover:text-white"
+                ></i
+                >Izin
+              </li>
+            </a>
+            <a href="./lembur.html">
+              <li
+                class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+              >
+                <i
+                  class="bx bxs-calendar-plus text-2xl text-gray-400 group-hover:text-white"
+                ></i
+                >Lembur
+              </li>
+            </a>
+          </ul>
+          <ul>
+            <h3 class="font-semibold text-lg mt-4 mb-2 text-gray-500">
+              Menu Penggajian
+            </h3>
+            <li
+              class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+            >
+              <i
+                class="bx bx-money text-xl text-gray-400 group-hover:text-white"
+              ></i
+              >Slip Gaji
+            </li>
+            <li
+              class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+            >
+              <i
+                class="bx bx-money-withdraw text-xl text-gray-400 group-hover:text-white"
+              ></i
+              >Cetak Slip Gaji
+            </li>
+          </ul>
+          <ul>
+            <h3 class="font-semibold text-lg mt-4 mb-2 text-gray-500">
+              Menu Laporan
+            </h3>
+            <li
+              class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+            >
+              <i
+                class="bx bxs-file-pdf text-xl text-gray-400 group-hover:text-white"
+              ></i
+              >Cetak Laporan
+            </li>
+          </ul>
+          <ul>
+            <h3 class="font-semibold text-lg mt-4 mb-2 text-gray-500">
+              Menu Admin
+            </h3>
+            <li
+              class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
+            >
+              <i
+                class="bx bxs-user-detail text-xl text-gray-400 group-hover:text-white"
+              ></i
+              >Pengguna
+            </li>
+          </ul>
+          <button class="bg-gray-500 w-[100%] px-4 py-2 mt-5">Logout</button>
+        </div>
+      </aside>
+      <section class="col-start-3 col-end-13">
+        <nav
+          class="bg-gray-500 h-16 sticky top-0 shadow-lg shadow-black-300/40"
+        >
+          <ul class="flex px-10 py-3 place-content-end">
+            <img src="../assets/dap.jpg" class="w-10 h-10 rounded-full object-cover" alt="" />
+          </ul>
+        </nav>
+
+        <section>
+          <div class="bg-gray-500 h-[20vh] flex items-center px-10">
+            <h3 class="text-3xl text-white">Dashboard</h3>
+          </div>
+          <section class="bg-white shadow-lg rounded-sm -mt-5 mx-10">
+            <div class="flex justify-between p-3 items-center">
+              <h3 class="text-2xl text-black font-semibold">Data Jabatan</h3>
+              <button class="bg-gray-500 p-2 rounded-full text-white">
+                + Tambah Jabatan
+              </button>
+            </div>
+            <div class="border-b"></div>
+            <div class="relative overflow-x-auto">
+              <table
+                class="w-full text-sm text-left rtl:text-right text-gray-500"
+              >
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                  <tr>
+                    <th scope="col" class="px-6 py-3">No</th>
+                    <th scope="col" class="px-6 py-3">Kode Jabatan</th>
+                    <th scope="col" class="px-6 py-3">Jabatan</th>
+                    <th scope="col" class="px-6 py-3">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script type="text/javascript">
+      const datas = [
+        {
+          id: "K001",
+          nama: "Abdul Fatawu",
+          email: "abdulf@mail.com",
+          alamat: "Jl.Kemboja no.45",
+          jabatan: "Staff",
+        },
+        {
+          id: "K002",
+          nama: "Ahmad Jaelani",
+          email: "ahmadj@mail.com",
+          alamat: "Jl.mawar no.5",
+          jabatan: "Kepala Bagian",
+        },
+        {
+          id: "K003",
+          nama: "Sunarto",
+          email: "sunarto@mail.com",
+          alamat: "Jl.patriot no.2",
+          jabatan: "Staff",
+        },
+        {
+          id: "K004",
+          nama: "Anggita",
+          email: "anggita@mail.com",
+          alamat: "Jl.Klingkit no.1",
+          jabatan: "Staff",
+        },
+        {
+          id: "K005",
+          nama: "Azizah juliyanti",
+          email: "azizahj@mail.com",
+          alamat: "Jl.ahmad dahlan no.8",
+          jabatan: "Staff",
+        },
+      ];
+
+      function renderTableJabatan() {
+        const tableBody = document.getElementById("tbody");
+        tableBody.innerHTML = ""; // Bersihkan isi tabel sebelumnya
+
+        datas.forEach((data, idx) => {
+          const row = `
+                          <tr class="bg-white border-b ">
+                              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                  ${idx + 1}
+                              </th>
+                              <td class="px-6 py-4">${data.id}</td>
+                              <td class="px-6 py-4">${data.jabatan}</td>
+                              <td class="px-6 py-4">
+                                  <button class="bg-green-400 p-2 text-white rounded-sm">Update</button>
+                                  <button class="bg-red-400 p-2 text-white rounded-sm">Delete</button>
+                              </td>
+                          </tr>
+                      `;
+          tableBody.innerHTML += row;
+        });
+      }
+      renderTableJabatan();
+    </script>
+  </body>
+</html>
