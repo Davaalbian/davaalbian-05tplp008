@@ -4,21 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style/output.css" rel="stylesheet" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Tambah Data Karyawan</title>
+    <style>
+      /* Add any custom styling specific to the form */
+      .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .button-group {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .button-group .save-btn {
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+      }
+      .button-group .cancel-btn {
+        background-color: #dc3545;
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
     <main class="grid grid-cols-12">
-      <aside
-        class="sticky top-0 left-0 h-[100vh] overflow-y-auto bg-white col-start-1 col-end-3"
-      >
+      <aside class="sticky top-0 left-0 h-[100vh] overflow-y-auto bg-white col-start-1 col-end-3">
         <div class="bg-gray-500 mb-5 sticky top-0 h-16">
           <h3 class="text-3xl text-white font-bold p-3">PT_Dapstore</h3>
         </div>
         <div class="flex items-center gap-3 px-5">
-          <img src="dap.jpg" alt="" class="w-10 h-10 rounded-full object-cover"/>
+          <img src="dap.jpg" alt="" class="w-10 h-10 rounded-full object-cover" />
           <div>
             <p class="text-xs">Welcome, Dava Albian</p>
             <p class="font-semibold">Administrator</p>
@@ -26,13 +71,8 @@
         </div>
         <div class="px-5 py-2">
           <a href="./index.html">
-            <li
-              class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group"
-            >
-              <i
-                class="bx bxs-home text-xl text-gray-400 group-hover:text-white"
-              ></i
-              >Dashboard
+            <li class="flex items-center gap-2 my-1 hover:bg-gray-400 rounded-md hover:text-white p-2 group">
+              <i class="bx bxs-home text-xl text-gray-400 group-hover:text-white"></i> Dashboard
             </li>
           </a>
           <ul>
@@ -155,17 +195,71 @@
           <button class="bg-gray-500 w-[100%] px-4 py-2 mt-5">Logout</button>
         </div>
       </aside>
+          <!-- Sidebar Menu Options -->
+        </div>
+      </aside>
       <section class="col-start-3 col-end-13">
-        <nav
-          class="bg-gray-500 h-16 sticky top-0 shadow-lg shadow-black-300/40"
-        >
+        <nav class="bg-gray-500 h-16 sticky top-0 shadow-lg shadow-black-300/40">
           <ul class="flex px-10 py-3 place-content-end">
-            <img src="dap.jpg"w-10 h-10 rounded-full object-cover" alt="" />
+            <img src="dap.jpg" class="w-10 h-10 rounded-full object-cover" alt="" />
           </ul>
         </nav>
-        
+
+        <!-- Employee Form Section -->
+        <div class="container -ml-10">
+          <h2>FORMS > Karyawan > Tambah Data Karyawan</h2>
+          <form>
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama">
+            </div>
+            <div class="form-group">
+              <label for="jenis_kelamin">Jenis Kelamin</label>
+              <select id="jenis_kelamin" name="jenis_kelamin">
+                <option value="">---</option>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="no_hp">No HP</label>
+              <input type="text" id="no_hp" name="no_hp">
+            </div>
+            <div class="form-group">
+              <label for="alamat">Alamat</label>
+              <textarea id="alamat" name="alamat"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+              <label for="jabatan">Jabatan</label>
+              <select id="jabatan" name="jabatan">
+                <option value="">---</option>
+                <!-- Add job title options here -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="divisi">Divisi</label>
+              <select id="divisi" name="divisi">
+                <option value="">---</option>
+                <!-- Add division options here -->
+              </select>
+            </div>
+            <div class="button-group">
+              <button type="submit" class="save-btn">Simpan</button>
+              <button type="button" class="cancel-btn">Batal</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <script src="./script.js"></script>
   </body>
 </html>
+
